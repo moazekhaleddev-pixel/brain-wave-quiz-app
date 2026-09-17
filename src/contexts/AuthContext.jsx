@@ -28,7 +28,7 @@ function reducer(state, action) {
       throw new Error("Unknown action type");
   }
 }
-const BASE_URL = "https://cimascope-auth-server.vercel.app/api";
+const BASE_URL = "https://cimascope-auth-server.vercel.app/api/auth";
 const initialState = {
   user: {},
   isAuthenticated: false,
@@ -45,7 +45,7 @@ export function AuthProvider({ children }) {
     async function checkSesion() {
       try {
         dispatch({ type: "loading" });
-        const data = await apiFetch(`${BASE_URL}/auth/me`, {
+        const data = await apiFetch(`${BASE_URL}/me`, {
           method: "GET",
           credentials: "include",
         });
