@@ -1,0 +1,37 @@
+.userAcount{
+    position: relative;
+}
+
+.userAcount .img{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    border: 1px solid var(--border);
+    cursor: pointer;
+}
+
+.userAcount .popup{
+position: absolute;
+    background-color: var(--card);
+    top: 40px;
+    left: -70px;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.popup p:first-child{
+    color: var(--text-secondary);
+}
+.popup p:last-child{
+    color: var(--card-foreground);
+}

@@ -1,0 +1,132 @@
+:root {
+  --background: #e5e7eb;
+  --foreground: #111827;
+  --card: #ffffff;
+  --card-foreground: #111827;
+  --primary: #4f46e5;
+  --primary-foreground: #ffffff;
+  --secondary: #f3f4f6;
+  --secondary-foreground: #374151;
+  --muted: #f3f4f6;
+  --muted-foreground: #6b7280;
+  --accent: #eef2ff;
+  --accent-foreground: #4338ca;
+  --border: #dddddd;
+  --ring: #c7d2fe;
+  --radius: 10px;
+   --text-secondary:#6B7280;
+   --red-border: #FF6B6B;
+  --red-bg: #FF6B6B1A; 
+  --yellow-border: #FBBF24;
+  --yellow-bg: #FBBF241A;
+  --green-border: #34D399;
+  --green-bg: #34D3991A;
+}
+
+.dark {
+  --background: #0f1117;
+  --foreground: #f1f5f9;
+  --card: #1a1d27;
+  --card-foreground: #f1f5f9;
+  --primary: #6366f1;
+  --primary-foreground: #ffffff;
+  --secondary: #1e2130;
+  --secondary-foreground: #cbd5e1;
+  --muted: #1e2130;
+  --muted-foreground: #94a3b8;
+  --accent: #1e1b4b;
+  --accent-foreground: #a5b4fc;
+  --border: #2d3148;
+  --ring: #4f46e5;
+  --text-secondary:#94A3B8;
+  --red-border: #FF6B6B;
+  --red-bg: #FF6B6B1A; 
+  --yellow-border: #FBBF24;
+  --yellow-bg: #FBBF241A;
+  --green-border: #34D399;
+  --green-bg: #34D3991A;
+}
+
+/* =========================================
+   Modern CSS Reset (Startup Boilerplate)
+   ========================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Cairo", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  width: 100%;
+
+  max-width: 1280px;
+
+  margin-inline: auto;
+
+  padding-inline: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-inline: 1rem;
+  }
+}

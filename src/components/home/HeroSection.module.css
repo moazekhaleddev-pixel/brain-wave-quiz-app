@@ -1,0 +1,9 @@
+.heroSection {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 60px 0;
+    border-bottom: 1px solid var(--border);
+}

@@ -1,0 +1,78 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  width: 60%;
+}
+
+.heading .mark {
+  display: flex;
+  align-items: center;  
+  gap: 5px;
+  background-color: var(--accent);
+  color: var(--accent-foreground);
+  font-size: 10px;
+  border-radius: 15px;
+  padding: 5px 7PX;
+}
+
+.heading h1 {
+  color: var(--foreground);
+  font-size: 50px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.heading h1 span {
+  color: var(--accent-foreground);
+}
+
+.heading p {
+  font-size: 20px;
+  color: var(--text-secondary);
+}
+
+.heading .ctaBtn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+@media (max-width:720px) {
+    .heading .ctaBtn{
+        flex-direction: column;
+        align-items: normal;
+        width: fit-content;
+    }
+}
+
+.heading .ctaBtn button {
+  display: flex;
+  gap: 5px;
+}
+
+
+.heading .stats {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.heading .stats div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.heading .stats div span:nth-child(1) {
+  color: var(--foreground);
+  font-weight: bold;
+  font-size: 18px;
+}
+.heading .stats div span:nth-child(2) {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+@media (max-width:870px) {
+    .heading{
+        width: 100%;
+    }
+}

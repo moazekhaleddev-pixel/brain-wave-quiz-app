@@ -1,0 +1,79 @@
+.features {
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  border-bottom: 1px solid var(--border);
+}
+.features .head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+.features .head h2,
+.head p {
+  text-align: center;
+}
+
+.features .head h2 {
+  color: var(--primary-foreground);
+  font-size: 35px;
+}
+
+.features .head p {
+  color: var(--text-secondary);
+  font-size: 18px;
+}
+
+.features .cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(340px,1fr));
+  gap: 20px;
+}
+
+.features .cards .card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--card);
+  padding: 20px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  transition: all 0.3s;
+}
+
+.features .cards .card p.title{
+    color: var(--foreground);
+}
+.features .cards .card p.desc{
+    color: var(--text-secondary);
+}
+.features .cards .card:hover{
+    border-color: var(--primary);
+    transform: translateY(-5px);
+      box-shadow:
+    0 10px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.features .cards .card .icon {
+  width: fit-content;
+  padding: 10px;
+  border-radius: var(--radius);
+}
+
+.features .cards .card:nth-child(1) .icon {
+  background-color: #818cf83b;
+}
+
+.features .cards .card:nth-child(2) .icon {
+  background-color: #34d3994a;
+}
+.features .cards .card:nth-child(3) .icon {
+  background-color: #f472b63d;
+}

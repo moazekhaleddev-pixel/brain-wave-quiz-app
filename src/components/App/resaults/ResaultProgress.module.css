@@ -1,0 +1,24 @@
+.resultsProgrees {
+    padding: 18px;
+    background-color: var(--card);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius);
+}
+.accuracy {
+    width: 100%;
+}
+
+.accuracy > div {
+    color: var(--text-secondary); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.accuracy > div  span:nth-child(2){
+    color: var(--primary);
+}

@@ -1,0 +1,23 @@
+.marks {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.marks .mark {
+    border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: var(--card);
+  width: calc((100%/3) - 5px);
+}
+
+.marks .mark span:nth-child(3) {
+  color: var(--text-secondary);
+}

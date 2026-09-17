@@ -1,0 +1,54 @@
+.catigory {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid;
+  background-color: var(--card);
+  padding: 15px;
+  transition: all 0.3s;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: 0 0 15px color-mix(in srgb, var(--secondary), transparent 90%);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.catigory > span {
+  display: inline-block;
+  padding: 5px;
+  border-radius: var(--radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+}
+.catigory .catInfo {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.catigory .catInfo h3 {
+  color: var(--card-foreground);
+}
+
+.catigory .catInfo h4 {
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.catigory .catInfo h4 span {
+  transition: all 0.3s;
+}
+.catigory:hover .catInfo span {
+  transform: translateX(3px);
+}
+
+.catigory:hover {
+  transform: translateY(-5px);
+  border-color: var(--catColor);
+  box-shadow: 0 0 15px color-mix(in srgb, var(--catColor), transparent 90%);
+}

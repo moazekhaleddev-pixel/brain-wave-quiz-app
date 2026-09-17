@@ -1,0 +1,14 @@
+.formHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.formHead button{
+    color: var(--text-secondary);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}

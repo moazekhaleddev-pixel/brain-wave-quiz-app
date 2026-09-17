@@ -1,0 +1,22 @@
+.results {
+  margin: 100px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+}
+@media (max-width: 1430px) {
+  .results {
+    width: 40%;
+  }
+}
+@media (max-width: 1020px) {
+  .results {
+    width: 50%;
+  }
+}
+@media (max-width: 720px) {
+  .results {
+    width: 80%;
+  }
+}

@@ -1,0 +1,32 @@
+.reviews {
+  background-color: var(--card);
+  border-radius: var(--radius);
+}
+
+.reviews li {
+  display: flex;
+  padding: 15px;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.reviews li:not(:last-child){
+  border-bottom: 1px solid var(--border);
+}
+
+.reviews li .wrongAnswer {
+  color: var(--red-border);
+}
+
+.reviews li .correctAnswer {
+  color: var(--green-border);
+}
+.reviews li .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}

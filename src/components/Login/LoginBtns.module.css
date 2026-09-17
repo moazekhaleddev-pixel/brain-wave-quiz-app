@@ -1,0 +1,26 @@
+/* LoginBtns.module.css */
+.loginBtns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.loginBtns button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  width: 100%;
+  transition: all 0.2s ease;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.04),
+    0 1px 2px rgba(0, 0, 0, 0.06) !important;
+}
+
+.loginBtns svg {
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,93 @@
+.navContent {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  margin-right: 30px;
+}
+
+.nav {
+  height: 100%;
+  margin: auto;
+}
+.navContent ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  text-transform: capitalize;
+}
+.navContent ul li {
+  height: 100%;
+  color: var(--muted-foreground);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.navContent ul li:hover {
+  color: var(--foreground);
+}
+.authBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.loginBtn {
+  color: var(--muted-foreground);
+  transition: all 0.3s;
+  font-size: 14px;
+}
+
+.loginBtn:hover {
+  color: var(--foreground);
+}
+
+
+.navContent.display{
+    display: flex;
+}
+
+@media (max-width: 750px) {
+  .navContent {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+    background-color: var(--card);
+    padding: 15px;
+    border-bottom: 1px solid var(--border);
+    display: none;
+    overflow: hidden;
+    transition: all 0.3s;
+    
+}
+  .nav {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .authBtns {
+    width: 100%;
+    margin: auto;
+  }
+  .authBtns button{
+    width: 50%;
+  }
+  .authBtns button.loginBtn{
+    color: var(--foreground);
+    padding: 5px 10px ;
+    border-radius: var(--radius);
+    border:  1px solid var(--border);
+    background-color: var(--background);
+    font-weight: bold;
+  }
+}

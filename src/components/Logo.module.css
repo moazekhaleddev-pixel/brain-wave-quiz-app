@@ -1,0 +1,11 @@
+.logoContainer {
+  font-size: 24px;
+  color: var(--foreground);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+.logo {
+  margin-left: 10px;
+}

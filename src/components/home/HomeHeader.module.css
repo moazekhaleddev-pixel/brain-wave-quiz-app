@@ -1,0 +1,29 @@
+.headContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  width: 100%;
+}
+
+.header {
+    width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  border-bottom: 1px solid var(--border);
+    background-color: var(--background);
+}
+.menuBtn {
+  color: var(--foreground);
+  margin-left: 10px;
+  display: none;
+}
+
+@media (max-width:750px) {
+    .menuBtn{
+        display: inline;
+    }
+}

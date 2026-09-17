@@ -1,0 +1,17 @@
+.themeBtn{
+    width: fit-content;
+    transition: all 0.3s;
+    color: var(--muted-foreground);
+    padding: 5px;
+    border-radius: var(--radius);
+}
+.themeBtn:hover{
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+}
+
+@media (max-width:750px) {
+    .themeBtn{
+        margin-left: auto;
+    }
+}

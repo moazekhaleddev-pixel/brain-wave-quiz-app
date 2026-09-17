@@ -1,0 +1,22 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 20px;
+}
+
+.footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.footer ul li {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.footer ul li:hover{
+    color: var(--foreground);
+}

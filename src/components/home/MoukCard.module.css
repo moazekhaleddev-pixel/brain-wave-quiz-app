@@ -1,0 +1,198 @@
+.mouckCard {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  width: 40%;
+  position: relative;
+  box-shadow:
+    0 10px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+  transition: box-shadow 0.3s ease;
+}
+
+.mouckCard div {
+  padding: 5px 10px;
+}
+
+.mouckCard .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.mouckCard .head > div {
+  font-size: 14px;
+}
+
+.mouckCard ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.mouckCard ul li span {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+}
+
+.mouckCard ul li:nth-child(1) span {
+  background-color: #ff6467;
+}
+.mouckCard ul li:nth-child(2) span {
+  background-color: #ffb900;
+}
+.mouckCard ul li:nth-child(3) span {
+  background-color: #05df72;
+}
+
+.mouckCard .status {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-secondary);
+}
+.mouckCard .status .timer {
+  background-color: var(--accent);
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 10px;
+  font-weight: bold;
+  border: 1px solid var(--border);
+}
+
+.progress {
+  width: 100%;
+}
+
+.progress progress {
+  width: 100%;
+  height: 5px;
+  border: none;
+  border-radius: 999px;
+  background-color: var(--border);
+  overflow: hidden;
+}
+
+.progress progress::-webkit-progress-bar {
+  background-color: var(--border);
+  border-radius: 999px;
+}
+
+.progress progress::-webkit-progress-value {
+  background-color: var(--primary);
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.progress progress::-moz-progress-bar {
+  background-color: var(--primary);
+  border-radius: 999px;
+}
+.mouckCard .questionBody h2 {
+  font-size: 15px;
+}
+
+.mouckCard .questionBody .options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px 0;
+}
+
+.mouckCard .questionBody .options .option {
+  width: calc(50% - 5px);
+  background-color: var(--muted);
+  border-radius: var(--radius);
+  font-size: 14px;
+  color: var(--muted-foregrou);
+  border: 1px solid var(--border);
+  cursor: pointer;
+}
+.mouckCard .questionBody .options .option.correct {
+  background-color: var(--accent);
+  color: var(--accent-foreground);
+}
+
+.mouckCard div:has(button) {
+  width: 100%;
+}
+
+.mouckCard div button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  cursor: default;
+}
+
+.mouckCard .stats {
+  display: flex;
+  padding: 0;
+  margin-top: 10px;
+}
+.mouckCard .stats div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-top: 1px solid var(--border);
+}
+
+.mouckCard .stats div:nth-child(2) {
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+
+.mouckCard .stats div span:nth-child(2) {
+  font-size: 10px;
+  color: var(--text-secondary);
+}
+
+.mouckCard .profile {
+  position: absolute;
+  bottom: -27px;
+  background-color: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  left: -62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:
+    0 10px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+  transition: box-shadow 0.3s ease;
+}
+
+.mouckCard .profile > span {
+  background-color: var(--accent);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.mouckCard .profile .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mouckCard .profile .info span:nth-child(2) {
+  font-size: 10px;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 870px) {
+  .mouckCard {
+    display: none;
+  }
+}

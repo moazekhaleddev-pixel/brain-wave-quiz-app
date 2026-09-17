@@ -1,0 +1,118 @@
+.modalOverlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: #000000b0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.setup {
+    width: 400px;
+    background-color: var(--card);
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.setup .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+.setup .head > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.setup .head > div span{
+  display: inline-block;
+  padding: 5px;
+  border-radius: var(--radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+}
+.setup .head > div .catInfo{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.setup .head > div .catInfo  h3{
+    color: var(--text-secondary);
+}
+@media (max-width:720px) {
+    .setup{
+        width: 350px;
+    }
+}
+
+.setup .difficultyBtns{
+    display: flex;
+    gap: 10px;
+}
+.setup .difficultyBtns button{
+    padding: 5px 10px;
+    border-radius: var(--radius);
+    width: calc((100%/3) - 10px);
+
+}
+
+.setup :global(.mantine-Select-input) {
+  background-color: var(--muted) !important; 
+  border: 1px solid var(--border) !important; 
+  color: var(--foreground) !important; 
+  border-radius: var(--radius) !important; 
+}
+
+/* لما اليوزر يركز على الـ Input (Focus) */
+.setup :global(.mantine-Select-input:focus) {
+  border-color: var(--primary) !important; 
+}
+
+/* 2. تظبيط الـ Dropdown (القائمة اللي بتنزل لتحت) */
+.setup :global(.mantine-Select-dropdown) {
+  background-color: var(--muted) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important; 
+}
+
+/* 3. تظبيط الاختيارات من جوه (Options) */
+.setup :global(.mantine-Select-option) {
+  color: var(--foreground) !important;
+  border-radius: 4px !important;
+  background-color: transparent !important; /* بنشيل أي لون ديفولت */
+}
+
+/* 4. تظبيط الهوفر على الاختيارات (لما تقف بالماوس على اختيار) */
+.setup :global(.mantine-Select-option:hover),
+.setup :global(.mantine-Select-option[data-hovered]),
+.setup :global(.mantine-Select-option[data-combobox-active]) {
+  /* استخدمنا لون الـ accent اللي عندك عشان يدي تأثير خفيف وشيك */
+  background-color: var(--accent) !important; 
+  color: var(--accent-foreground) !important;
+}
+
+/* 5. تظبيط الـ Label (عنوان الـ Input من فوق) */
+.setup :global(.mantine-Select-label) {
+  color: var(--secondary-foreground) !important; /* لون هادي للعنوان */
+  font-weight: 500;
+  margin-bottom: 6px;
+}

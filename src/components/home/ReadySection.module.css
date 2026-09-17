@@ -1,0 +1,27 @@
+.ready {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 30px;
+  border-bottom: 1px solid var(--border);
+}
+
+.ready h2{
+    font-size: 35px;
+    color: var(--foreground);
+    
+}
+
+.ready p{
+    color: var(--text-secondary);
+    font-size: 18px;
+}
+
+.ready button{
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 18px;
+}

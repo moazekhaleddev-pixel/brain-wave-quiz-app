@@ -1,0 +1,109 @@
+.quiz {
+  margin: 64px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+}
+@media (max-width: 1430px) {
+  .quiz {
+    width: 40%;
+  }
+}
+@media (max-width: 1020px) {
+  .quiz {
+    width: 50%;
+  }
+}
+@media (max-width: 720px) {
+  .quiz {
+    width: 80%;
+  }
+}
+.quiz .quizHead {
+  padding: 20px 0 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.quiz .quizHead  span{
+    color:  var(--text-secondary);
+}
+.quiz .options {
+  color: var(--primary-foreground);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+.quiz .question{
+    font-size: 14;
+}
+.quiz .options button {
+  background-color: var(--muted);
+  width: 100%;
+  text-align: start;
+  padding: 7px;
+  padding-left: 13px;
+box-shadow: 0 0 0 1px var(--border);
+  border-radius: var(--radius);
+  color: var(--foreground);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.5s;
+}
+.quiz .options button .letter {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--card);
+  color: var(--card-foreground);
+  border-radius: 100%;
+box-shadow: 0 0 0 1px var(--border);
+  transition: all 0.5s;
+}
+.quiz .options button:not(:disabled):hover {
+box-shadow: 0 0 0 0.3px var(--foreground);
+  background-color: var(--accent);
+}
+
+.quiz .options button:not(:disabled):hover .letter {
+box-shadow: 0 0 0 0.3px var(--foreground);
+}
+.quiz .options button:disabled{
+  cursor: not-allowed;
+}
+
+.quiz .options  .correct{
+    box-shadow: 0 0 0 0.3px var(--green-border);
+    background-color: var(--green-bg);
+}
+
+
+.quiz .options  .wrong{
+    box-shadow: 0 0 0 0.3px var(--red-border);
+    background-color: var(--red-bg);
+}
+
+.quiz .progress span {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+
+
+.quiz .quizFooter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.quiz .quizFooter .next{
+    background-color: var(--muted);
+    color: var(--muted-foreground);
+    padding: 5px 10px;
+    border-radius: var(--radius);
+}
