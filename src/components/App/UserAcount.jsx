@@ -17,7 +17,7 @@ export default function UserAcount() {
   return (
     <div className={styles.userAcount}>
       <div className={styles.img} onClick={() => setIsopen((o) => !o)}>
-        {name.slice(0, 2).toUpperCase()}
+        {name?.slice(0, 2).toUpperCase()}
       </div>
       {isOpen && (
         <div className={styles.popup}>
