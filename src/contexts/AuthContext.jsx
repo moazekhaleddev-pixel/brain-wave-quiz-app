@@ -70,7 +70,7 @@ export function AuthProvider({ children }) {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ username: email, password }),
+        body: JSON.stringify({ email: email, password }),
         credentials: "include",
       });
       dispatch({ type: "login", payload: data.user });
